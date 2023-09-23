@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetLinked</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e4d530ba8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="registermain">
+        <div class="registertop">
+            <h2 class="purpleguidelines">Register</h2>
+
+            <div class="registercartoon">
+                <img src="/svgs/3d-graphic-designer-showing-thumbs-up-png 1.png" class="thumbsup">
+                <img src="/svgs/register-sata gra.png" class="register-satagra">
+
+            </div>
+            <div class="registerwords">
+                <div class="registerheader">
+                    <img src="/svgs/Part of move.png" class="partofmove">
+                    <h2>CREATE YOUR ACCOUNT</h2>
+                </div>
+            </div>
+
+            <div class="registerformdiv">
+                <form class="registerform">
+                    <span>Team's Name</span>
+                    <input type="text" placeholder="   Enter the name of your group">
+
+                    <span>Phone</span>
+                    <input type="tel" placeholder="   Enter your phone number">
+
+                    <span>Email</span>
+                    <input type="email" name="" id="regemail" placeholder="   Enter your email address">
+
+                    <span>Project Topic</span>
+                    <input type="text" placeholder="   What is your group project topic">
+
+                    <div class="form-flexdisplay">
+                        <div class="category-select">
+                            <label for="cate">Category</label>
+                            <select name="Category" id="cate">
+                                <option value="select" class="placehold">Select your Category</option>
+                                <option value="UI/UX">UI/UX</option>
+                                <option value="frontend">Frontend</option>
+                            </select>
+                        </div>
+                        
+                        <div class="groupsize-div">
+                            <label for="group">Group Size</label>
+                            
+                            <select name="Group" id="group">
+                                <option value="select" class="placehold">Select</option>
+                                <option value="1">1</option>
+                                <option value="2-5">2-5</option>
+                                <option value="6-10">6-10</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="groupsize-star">
+                        <img src="/svgs/star pu policy.png" class="groupsize-sta">
+                    </div>
+
+                    <div class="review">
+                        <span class="reg-note">Please review your registration details before submitting</span>
+                        <div class="checkboxdiv">
+                            <input type="checkbox" name="agreebox" id="agree">
+                            <label for="agreebox">I agreed with the event terms and conditions and privacy policy</label>
+                        </div>
+                        
+                    </div>
+                    <div class="regbtn-div">
+                        <button type="button" class="reg-btn" onclick="openPopup()">Submit</button>
+
+    
+                    </div>
+                    <div class="popup" id="popup">
+                        <div class="confirmpopup">
+                            <div class="confirmgood">
+                                <img src="/svgs/confirmmobile.png" class="greenconfirm">
+                            </div>
+                            <div class="confirmwords">
+                                <h2>Congratulations you have successfully Registered!</h2>
+
+                                <p>Yes, it was easy and you did it!
+                                    <br>
+                                    Check your mail box for next step &#128521;
+                                </p>
+                                <a href="index.html"><button type="button" onclick="closePopup()" class="confirmback-btn">Back</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                </form>
+                
+            </div>
+            
+            
+            
+        </div>
+
+
+    </main>
+    
+    <script>
+        let popup= document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
