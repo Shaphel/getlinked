@@ -105,6 +105,7 @@ main{
         transition: 0.8s;
         background-color: #150e28;
         color: #FFFFFF;
+        z-index: 1;
     }
 
     .nav-item{
